@@ -1,0 +1,17 @@
+package javaproblem;
+import java.util.*;
+public class JavaProblem {
+
+    public static void main(String[] args) {
+
+            Scanner input = new Scanner (System.in);
+            int sum=0;
+            System.out.print("Enter number : ");
+            int n=input.nextInt();
+            for(int i=1;i<=10;i++)
+            {   
+                sum+=i;
+            }
+            System.out.println("Sum of all numbers from 1 to "+n+" : "+ sum);
+    }
+}
