@@ -1,0 +1,25 @@
+package anisuljavacourse;
+
+import java.util.*;
+
+public class ForClass {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter String : ");
+        String str = input.nextLine().toLowerCase();
+        str = str.replace(" ","");
+        int vowel = 0, consonant = 0;
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                vowel++;               
+            } 
+	else {
+                consonant++;
+            }
+        }
+        System.out.println("This String Vowel Number : " + vowel);
+        System.out.println("This String Consonant Number : " + consonant);
+    }
+}

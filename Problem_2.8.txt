@@ -1,0 +1,19 @@
+package anisuljavacourse;
+
+import java.util.*;
+
+public class ForClass {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter String : ");
+        String str1 = input.nextLine().toLowerCase();
+        StringBuffer temp = new StringBuffer(str1);
+        String str2 = temp.reverse().toString();
+        if (str1.equals(str2)) {
+            System.out.println("This String is Palindrome.");
+        } else {
+            System.out.println("This String is not Palindrome.");
+        }
+    }
+}
